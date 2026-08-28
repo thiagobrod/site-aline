@@ -45,6 +45,23 @@ export function Footer() {
       <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
         © {new Date().getFullYear()} Aline Alves — Psicóloga · Todos os direitos reservados
       </div>
+      <div className="border-t border-border/60 py-3 text-center">
+        <a
+          href="https://thiagobernardo.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-[10px] text-muted-foreground/60 transition-colors hover:text-primary"
+        >
+          Desenvolvido por
+          <img
+            src="/images/AG9-LOGO-9-600x223.png"
+            alt="AG9"
+            width={44}
+            height={16}
+            className="h-3.5 w-auto object-contain opacity-70"
+          />
+        </a>
+      </div>
     </footer>
   )
 }
