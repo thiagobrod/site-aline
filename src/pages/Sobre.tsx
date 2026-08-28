@@ -46,27 +46,26 @@ export default function Sobre() {
             <Reveal>
               <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  Sou <strong className="text-foreground">Aline Alves, psicóloga</strong>, formada em Psicologia pela{' '}
-                  <strong className="text-foreground">Universidade Cruzeiro do Sul</strong>, em 2013, e especialista em{' '}
-                  <strong className="text-foreground">Terapia Cognitivo-Comportamental (TCC)</strong> pelo CETCC —
-                  Centro de Estudos em Terapia Cognitivo-Comportamental, em 2021.
+                  Sou Aline Alves, psicóloga, formada em Psicologia pela Universidade Cruzeiro do Sul, em 2013, e
+                  especialista em Terapia Cognitivo-Comportamental (TCC) pelo CETCC – Centro de Estudos em Terapia
+                  Cognitivo-Comportamental, em 2021.
                 </p>
                 <p>
-                  Ao longo de mais de <strong className="text-foreground">12 anos de trajetória profissional</strong>,
-                  venho me dedicando ao estudo e à compreensão do comportamento humano, construindo uma escuta atenta
-                  e sensível às diferentes experiências, emoções e relações que fazem parte da vida adulta.
+                  Ao longo de mais de 12 anos de trajetória profissional, venho me dedicando ao estudo e à
+                  compreensão do comportamento humano, construindo uma escuta atenta e sensível às diferentes
+                  experiências, emoções e relações que fazem parte da vida adulta.
                 </p>
                 <p>
-                  Minha experiência na <strong className="text-foreground">Psicologia Organizacional</strong> ampliou
-                  meu olhar sobre os desafios enfrentados pelas pessoas no cotidiano, especialmente diante das
-                  pressões profissionais, mudanças, cobranças, conflitos, dificuldades nos relacionamentos e
-                  necessidade constante de conciliar diferentes áreas da vida. Essa trajetória também me permitiu
-                  acompanhar de perto momentos de transição, insegurança, esgotamento e busca por novos caminhos.
+                  Minha experiência na Psicologia Organizacional ampliou meu olhar sobre os desafios enfrentados pelas
+                  pessoas no cotidiano, especialmente diante das pressões profissionais, mudanças, cobranças,
+                  conflitos, dificuldades nos relacionamentos e necessidade constante de conciliar diferentes áreas
+                  da vida. Essa trajetória também me permitiu acompanhar de perto momentos de transição,
+                  insegurança, esgotamento e busca por novos caminhos.
                 </p>
                 <p>
-                  Hoje, levo essa experiência para a <strong className="text-foreground">Psicologia Clínica</strong>,
-                  oferecendo atendimento psicológico on-line para adultos que estejam enfrentando diferentes questões
-                  emocionais e buscando compreender melhor a si mesmos e suas escolhas.
+                  Hoje, levo essa experiência para a Psicologia Clínica, oferecendo atendimento psicológico on-line
+                  para adultos que estejam enfrentando diferentes questões emocionais e buscando compreender melhor a
+                  si mesmos e suas escolhas.
                 </p>
                 <p>
                   Acredito que a psicoterapia deve ser construída de forma individualizada, respeitando a história, o
