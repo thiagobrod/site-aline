@@ -39,22 +39,36 @@ export default function Atendimento() {
       <section className="pb-24">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="relative">
-            <div className="absolute bottom-8 left-[27px] top-8 w-px bg-gradient-to-b from-primary/50 via-primary/25 to-transparent md:left-1/2" aria-hidden />
-            <div className="space-y-10">
+            <div className="absolute bottom-8 left-[27px] top-8 w-px bg-gradient-to-b from-primary/50 via-primary/25 to-transparent md:left-1/2 md:-translate-x-1/2" aria-hidden />
+            <div className="space-y-10 md:space-y-0">
               {passos.map((p, i) => (
                 <Reveal key={p.titulo} delay={i * 0.08}>
-                  <div
-                    className={`relative flex items-start gap-6 md:w-1/2 ${
-                      i % 2 === 1 ? 'md:ml-auto md:pl-14' : 'md:flex-row-reverse md:pr-14 md:text-right'
-                    }`}
-                  >
-                    <div className="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-4 border-background bg-primary text-primary-foreground shadow-lg md:absolute md:left-1/2 md:-translate-x-1/2">
+                  <div className="relative grid items-center gap-6 md:grid-cols-[1fr_auto_1fr] md:gap-10 md:py-8">
+                    {/* card desktop: esquerda nos índices pares, direita nos ímpares */}
+                    <div
+                      className={`hidden md:block ${
+                        i % 2 === 0 ? 'md:text-right md:pr-4' : 'md:col-start-3 md:pl-4'
+                      }`}
+                    >
+                      <div className="rounded-3xl border border-border bg-white/85 p-6 shadow-sm backdrop-blur">
+                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Passo {i + 1}</p>
+                        <h2 className="mt-1 text-2xl font-semibold text-foreground">{p.titulo}</h2>
+                        <p className="mt-2 leading-relaxed text-muted-foreground">{p.texto}</p>
+                      </div>
+                    </div>
+
+                    {/* ícone central */}
+                    <div className="z-10 flex h-14 w-14 shrink-0 items-center justify-center self-center rounded-full border-4 border-background bg-primary text-primary-foreground shadow-lg md:col-start-2 md:row-start-1">
                       <p.icon size={22} />
                     </div>
-                    <div className="flex-1 rounded-3xl border border-border bg-white/85 p-6 shadow-sm backdrop-blur">
-                      <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Passo {i + 1}</p>
-                      <h2 className="mt-1 text-2xl font-semibold text-foreground">{p.titulo}</h2>
-                      <p className="mt-2 leading-relaxed text-muted-foreground">{p.texto}</p>
+
+                    {/* card mobile */}
+                    <div className="md:hidden">
+                      <div className="rounded-3xl border border-border bg-white/85 p-6 shadow-sm backdrop-blur">
+                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Passo {i + 1}</p>
+                        <h2 className="mt-1 text-2xl font-semibold text-foreground">{p.titulo}</h2>
+                        <p className="mt-2 leading-relaxed text-muted-foreground">{p.texto}</p>
+                      </div>
                     </div>
                   </div>
                 </Reveal>
