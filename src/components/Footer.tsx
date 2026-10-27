@@ -1,6 +1,7 @@
 import { Link } from 'react-router'
 import { Logo } from './Logo'
-import { NAV_LINKS } from '@/lib/site'
+import { Mail } from 'lucide-react'
+import { NAV_LINKS, EMAIL } from '@/lib/site'
 
 export function Footer() {
   return (
@@ -21,6 +22,13 @@ export function Footer() {
             <br />
             Abordagem: Terapia Cognitivo-Comportamental (TCC)
           </p>
+          <a
+            href={`mailto:${EMAIL}`}
+            className="mt-3 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+          >
+            <Mail size={15} className="text-primary" />
+            {EMAIL}
+          </a>
         </div>
         <div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-foreground/70">Navegação</p>

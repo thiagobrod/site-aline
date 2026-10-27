@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { MessageCircle, Send, CalendarHeart, Clock, ShieldCheck } from 'lucide-react'
+import { MessageCircle, Mail, Send, CalendarHeart, Clock, ShieldCheck } from 'lucide-react'
 import { PageHeader } from '@/components/PageHeader'
 import { Reveal } from '@/components/Reveal'
-import { waLink, DEFAULT_WA_MESSAGE } from '@/lib/site'
+import { waLink, DEFAULT_WA_MESSAGE, EMAIL } from '@/lib/site'
 
 const periodos = ['Manhã', 'Tarde', 'Noite', 'Flexível']
 const motivos = [
@@ -141,8 +141,8 @@ export default function Agendamento() {
                 <MessageCircle size={30} className="mb-5" />
                 <h2 className="text-2xl font-semibold">Prefere falar diretamente?</h2>
                 <p className="mt-3 leading-relaxed text-primary-foreground/85">
-                  Entre em contato pelo WhatsApp para saber mais sobre o atendimento e verificar a disponibilidade de
-                  horários.
+                  Entre em contato pelo WhatsApp ou por e-mail para saber mais sobre o atendimento e verificar a
+                  disponibilidade de horários.
                 </p>
                 <a
                   href={waLink(DEFAULT_WA_MESSAGE)}
@@ -152,6 +152,13 @@ export default function Agendamento() {
                 >
                   <MessageCircle size={17} />
                   Chamar no WhatsApp
+                </a>
+                <a
+                  href={`mailto:${EMAIL}`}
+                  className="mt-5 flex items-center gap-2 break-all text-sm text-primary-foreground/90 underline-offset-4 transition-colors hover:text-white hover:underline"
+                >
+                  <Mail size={16} className="shrink-0" />
+                  {EMAIL}
                 </a>
               </div>
 

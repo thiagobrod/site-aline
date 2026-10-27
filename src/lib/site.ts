@@ -1,6 +1,8 @@
 // Dados centrais do site — troque o número do WhatsApp aqui (somente dígitos, com DDI 55)
 export const WHATSAPP_NUMBER = '5511914520017'
 
+export const EMAIL = 'aline.saudepsi@gmail.com'
+
 export const waLink = (message: string) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
 
