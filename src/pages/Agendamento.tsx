@@ -3,6 +3,7 @@ import { MessageCircle, Mail, Send, CalendarHeart, Clock, ShieldCheck } from 'lu
 import { PageHeader } from '@/components/PageHeader'
 import { Reveal } from '@/components/Reveal'
 import { waLink, DEFAULT_WA_MESSAGE, EMAIL } from '@/lib/site'
+import { trackLead } from '@/lib/analytics'
 
 const periodos = ['Manhã', 'Tarde', 'Noite', 'Flexível']
 const motivos = [
@@ -35,6 +36,7 @@ export default function Agendamento() {
     ]
       .filter(Boolean)
       .join('\n')
+    trackLead('formulario')
     window.open(waLink(texto), '_blank', 'noopener')
   }
 

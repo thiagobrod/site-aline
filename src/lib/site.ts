@@ -3,6 +3,13 @@ export const WHATSAPP_NUMBER = '5511914520017'
 
 export const EMAIL = 'aline.saudepsi@gmail.com'
 
+export const SITE_URL = 'https://alinealvespsicologa.com.br'
+
+// Rastreamento — preencha quando as contas existirem (vazio = nada é carregado)
+export const GA4_ID = '' // ex.: 'G-XXXXXXXXXX' (Google Analytics 4)
+export const ADS_ID = '' // ex.: 'AW-XXXXXXXXXX' (Google Ads)
+export const ADS_LEAD_LABEL = '' // rótulo da conversão "Contato" no Google Ads, ex.: 'AbCdEfGhIj'
+
 export const waLink = (message: string) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
 

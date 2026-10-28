@@ -2,6 +2,7 @@ import { Link } from 'react-router'
 import { Logo } from './Logo'
 import { Mail } from 'lucide-react'
 import { NAV_LINKS, EMAIL } from '@/lib/site'
+import { TEMAS } from '@/lib/temas'
 
 export function Footer() {
   return (
@@ -37,6 +38,18 @@ export function Footer() {
               <li key={l.to}>
                 <Link to={l.to} className="text-sm text-muted-foreground transition-colors hover:text-primary">
                   {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mb-3 mt-8 text-sm font-semibold uppercase tracking-[0.18em] text-foreground/70">
+            Terapia on-line para
+          </p>
+          <ul className="space-y-2">
+            {TEMAS.map((t) => (
+              <li key={t.slug}>
+                <Link to={`/${t.slug}`} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                  {t.titulo.replace('Terapia on-line para ', '').replace(/^./, (c) => c.toUpperCase())}
                 </Link>
               </li>
             ))}
